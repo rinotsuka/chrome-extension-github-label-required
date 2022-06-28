@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension GitHub label required",
+  "short_name": "CEGLR",
+  "version": "1.0.0",
+  "content_scripts": [{
+    "matches": [
+      "https://github.com/*/*/compare/*/*"
+    ],
+    "js": [
+      "./src/jquery-3.6.0.min.js",
+      "./src/main.js"
+    ]
+  }]
+}
